@@ -17,7 +17,7 @@ const AddCoffee = () => {
 
         const newCoffee = {name,quantity,supplier,taste,category,details,photourl};
 
-        console.log(newCoffee)
+        // console.log(newCoffee)
 
         // Send data to the server
         fetch('http://localhost:5000/coffee',{

@@ -12,7 +12,7 @@ createUser(email, password)
         })
         .then(res=> res.json())
         .then(data =>{
-          console.log("user created in DB",data);
+          // console.log("user created in DB",data);
         })
        } )
         

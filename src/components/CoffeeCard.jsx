@@ -7,7 +7,7 @@ const CoffeeCard = ({ coffee,coffees,setCoffees }) => {
     const { _id, name, quantity, supplier, photourl } = coffee;
 
     const handleDelete = (_id) => {
-        console.log("Deleting ID:", _id); // Debug log
+        // console.log("Deleting ID:", _id); // Debug log
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -23,7 +23,7 @@ const CoffeeCard = ({ coffee,coffees,setCoffees }) => {
                 })
                     .then((res) => res.json())
                     .then((data) => {
-                        console.log("Delete Response:", data);
+                        // console.log("Delete Response:", data);
                         if (data.deletedCount > 0) {
                             Swal.fire({
                                 title: "Deleted!",

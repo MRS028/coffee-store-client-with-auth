@@ -34,7 +34,7 @@ const Users = () => {
                       const remainingUsers = users.filter(user =>user._id !== id);
                       setUsers(remainingUsers);
                 }
-                console.log('Delete successful',data);
+                // console.log('Delete successful',data);
             })
 
 
